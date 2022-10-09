@@ -42,6 +42,7 @@ class greetings extends Controller
         $input = array("おはよう", "こんにちは", "こんばんは", "おやすみ");
         $rand_key = array_rand($input, 1);
         $msg = $input[$rand_key];
+        
         return view('messages.random', ['msg' => $msg]);
     }
 }
