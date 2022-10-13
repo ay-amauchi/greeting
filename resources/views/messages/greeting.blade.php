@@ -8,7 +8,7 @@
     <title>あいさつアプリ</title>
 </head>
 <body>
-    <h1>{{ $time }}のあいさつ</h1>
-    <h2>{{ $greeting }}</h2>
+    <h1>{{ $title }}</h1>
+    <h2>{{ $comment }}</h2>
 </body>
 </html>

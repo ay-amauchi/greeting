@@ -17,9 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/comments/morning', [App\Http\Controllers\greetings::class, 'morning']);
-Route::get('/comments/afternoon', [App\Http\Controllers\greetings::class, 'afternoon']);
-Route::get('/comments/evening', [App\Http\Controllers\greetings::class, 'evening']);
-Route::get('/comments/night', [App\Http\Controllers\greetings::class, 'night']);
+Route::get('/comments/{element}', [App\Http\Controllers\greetings::class, 'greeting']);
 Route::get('/comments/freeword/{word}', [App\Http\Controllers\greetings::class, 'freeword']);
-Route::get('/comments/random', [App\Http\Controllers\greetings::class, 'random']);
